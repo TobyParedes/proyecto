@@ -8,7 +8,7 @@
     <title>Games</title>
     <link rel="stylesheet" href="../css/style.css"/>
     <script src="https://kit.fontawesome.com/cb47d0f5ac.js" crossorigin="anonymous"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
             </ul>
         </section>
         <section>
-            <div class="cards">
+            <div class="cards" data-aos="fade-left">
                 <article class="games_card">
                     <div class="games_card_image">
                         <img src="../images/godofwar.jpg" alt="godofwar">
@@ -83,7 +83,7 @@
             </div>
         </section>
         <section>
-            <div class="cards">
+            <div class="cards" data-aos="fade-right">
                 <article class="games_card">
                     <div class="games_card_image">
                         <img src="../images/godofwar.jpg" alt="godofwar">
@@ -129,6 +129,10 @@
         </div>
         <footer>
             <script src="../js/script.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+              </script>
 </body>
 
 </html>

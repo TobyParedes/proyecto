@@ -147,7 +147,7 @@ body{
  
  
  .cards{
-  margin-left: 40px;
+  margin-left: 3rem;
   margin-top: 70px;
   margin-bottom: 100px;
   display: grid;
@@ -277,12 +277,16 @@ body{
     color:#181818;
   }
 
-  
+.container{
+  border: 5px solid;
+  height: 100vh;
+}
 
 
 @media screen and (max-width: 1500px){
   .cards{
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 10rem;
   }
   .card_pc{
     grid-template-columns: repeat(2, 1fr);
@@ -394,4 +398,5 @@ body{
     .radio-section .social-network .fab {
       color: #fff;
     }
+
   }
