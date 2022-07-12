@@ -7,78 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mediaQueries.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/cb47d0f5ac.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <img src="../images/logo.png" class="logo" alt="Mvp Logo">
-            <ul class="menu" id="menu">
+        <nav class="navbars">
+            <a href="../index.html" class="logos"><img src="../images/logo.png" class="logos" alt="Mvp Logo"></a>
+            <ul class="menus" id="menus">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./games.html">Games</a></li>
                 <li><a href="./pcconsole.html">PC and Consoles</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="menu-bar" id="menu-bar">
+            <div class="menu-bars" id="menu-bars">
                 <i class="fas fa-bars"></i>
             </div>
-            <div class="shop">
+            <div class="shops">
                 <i class="fa-solid fa-cart-plus"></i>
             </div>
         </nav>
     </header>
 
     <main>
+        <section class="fondocontact">
+            <form class="fondocontact1">
+                <h2 class="textcontact">CONTACT</h2>
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="text" name="correo" placeholder="Correo">
+                <input type="text" name="telefono" placeholder="Telefono">
+                <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                <input type="button" value="ENVIAR" id="button" >
+        </form>
     </section>
-    <div class="container">
-        <h2>Contacto</h2>
-        <section>
-            <form action="" method="" enctype=""></form>
-            <label for="nombre">Nombre de Usuario</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Usuario...">
-            <br>
-            <label for="correo">Correo electronico</label>
-            <input type="text" id="correo" name="correo" placeholder="Correo...">
-            <br>
-            <label for="contraseña">Contraseña</label>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña...">
-            <br>
-            <label for="mensaje">Comentario</label>
-            <textarea type="text" id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Comentario..."></textarea>
-            <br>
-            <label for="pais">Nacionalidad</label>
-            <select name="pais" id="pais">
-                <option value="Argentina">Argentina</option>
-                <option value="Peru">Peru</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="Chile">Chile</option>
-            </select>
-            <br>
-            <label for="stargame">Suscripcion a Stargame</label>
-            <input type="checkbox" id="stargame">
-            <fieldset>
-                <legend>Marque a que grupo pertenece</legend>
-                <label for="admin">Administrador</label>
-                <label for="User">Usuario</label>
-                <input type="radio" id="admin" name="grupo">
-                <input type="radio" id="User" name="grupo">
-            </fieldset>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
-        </div>
-        </section>
     </main>
     <footer class="footer">
-        <div class="radio-section">
-            <div class="play-online">
+        <div class="radio-sections">
+            <div class="play-onlines">
                 <i class="fa-solid fa-headset"></i>
                 <h3>PLAY ONLINE</h3>
             </div>
             <h2>Follow me</h2>
-            <div class="social-network">
+            <div class="social-networks">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-instagram"></i>

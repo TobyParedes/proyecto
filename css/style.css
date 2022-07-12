@@ -10,42 +10,43 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
+.navbars {
     background-color: #EDCB54;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
   }
-  .navbar .logo {
-    height: 60px;
+  .navbars .logos {
+    height: 80px;
     width: 60px;
     grid-column: 2 / 3;
   }
-  .navbar .menu {
+  .navbars .menus {
     grid-column: 4 / 7;
     display: flex;
   }
-  .navbar ul li {
+  .navbars ul li {
     margin-right: 3em;
     list-style: none;
   }
-  .navbar a {
+  .navbars a {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-size: large;
   }
-  .navbar a:hover {
+  .navbars a:hover {
     color: #fff;
   }
-  .navbar .menu-bar {
+  .navbars .menu-bars {
     display: none;
   }
-  .navbar .shop {
+  .navbars .shops {
     grid-column: 8 / 9;
     justify-content: flex-end;
   }
 /* MAIN */
-.hero {
+.heros {
     height: 83vh;
     background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .9)) , url(../images/banner.jpg);
     /* background-size: cover; */
@@ -56,26 +57,26 @@ body{
     grid-template-rows: repeat(8, 1fr);
     position: relative;
   }
-.hero .info-content{
+.heros .info-content{
     grid-column: 7/10;
     grid-row: 2/4;
     color: #fff;
 }
-.hero h3{
+.heros h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: 300;
 }
 
-.hero h1{
+.heros h1{
     font-size: 4em;
     color: #edcb54;
 }
-.hero p{
+.heros p{
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
 }
-.hero .btn{
+.heros .btn{
     font-size: 1em;
     background: none;
     color: #fff;
@@ -84,46 +85,46 @@ body{
     border-radius: 30px;
     margin-top: 10px;
 }
-.hero .btn:hover{
+.heros .btn:hover{
     background-color: #fff;
     color: #181818;
 }
 
-.hero .info-content .btn:hover {
+.heros .info-content .btn:hover {
     background-color: #EDCB54;
     color:#181818;
   }
   /* footer */
 
-  .radio-section {
+  .radio-sections {
     display: grid;
-    height: 80px;
+    height: 120px;
     align-items: center;
     background-color: #181818;
     color: #fff;
     grid-template-areas: 
       "play-online follow-me social-network" 
   }
-  .radio-section .play-online {
+  .radio-sections .play-onlines {
     grid-template-areas: play-online;
     display: flex;
     justify-content: center;
     background-color: #EDCB54;
     color:#181818;
-    padding: 26px;
+    padding: 34px;
   }
-  .radio-section .play-online .fas {
+  .radio-sections .play-onlines .fas {
     margin-right: 15px;
     font-size: 1.5em;
   }
-  .radio-section h2 {
+  .radio-sections h2 {
     grid-template-areas: follow-me;
     text-align: center;
   }
-  .radio-section .social-network {
+  .radio-sections .social-network {
     grid-template-areas: social-network;
   }
-  .radio-section .social-network .fab {
+  .radio-sections .social-networks .fab {
     font-size: 1.4em;
     color: #EDCB54;
     margin-right: 15px;
@@ -283,6 +284,45 @@ body{
 }
 
 
+/* contact */
+  .fondocontact{
+    background-image: url(../images/fondodecontact.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  .fondocontact1{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 258px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+  .textcontact{
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+
+
 @media screen and (max-width: 1500px){
   .cards{
     grid-template-columns: repeat(1, 1fr);
@@ -297,44 +337,44 @@ body{
 
   @media only screen and (max-width: 1250px)  {
   
-    .navbar {
+    .navbars {
       background-color: #EDCB54;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       align-items: center;
     }
-    .navbar .logo {
+    .navbars .logos {
       height: 60px;
       width: 60px;
       grid-column: 2 / 3;
     }
-    .navbar .menu {
+    .navbars .menus {
       grid-column: 4 / 7;
       display: flex;
     }
-    .navbar ul li {
+    .navbars ul li {
       margin-right: 3em;
       list-style: none;
     }
-    .navbar ul li a {
+    .navbars ul li a {
       text-decoration: none;
       color: black;
       cursor: pointer;
     }
-    .navbar ul li a:hover {
+    .navbars ul li a:hover {
       color: #fff;
     }
-    .navbar .menu-bar {
+    .navbars .menu-bars {
       display: none;
     }
-    .navbar .shop {
+    .navbars .shops {
       grid-column: 8 / 9;
       justify-content: flex-end;
     }
-    .navbar {
+    .navbars {
       position: relative;
     }
-    .navbar .menu {
+    .navbars .menus {
       position: absolute;
       width: 100%;
       height: 70vh;
@@ -346,56 +386,59 @@ body{
       margin-top: 38em;
       z-index: 1;
     } 
-    .navbar .menu-toggle {
+    .navbar .menu-toggles {
       transform: translateX(0%);
     }  
-     .navbar .shop {
+     .navbar .shops {
        display: none;
      }
-    .navbar .menu-bar {
+    .navbar .menu-bars {
       display: block;
     }
-    .navbar .menu-bar .fas {
+    .navbars .menu-bars .fas {
       color: #181818;
     }
-    .navbar .menu li {
+    .navbars .menus li {
       list-style: none;
       margin: 0 auto;
     }  
-    .navbar .menu li a {
+    .navbars .menus li a {
       text-decoration: none;
       color: #181818;
       font-size: 1.2em;
     } 
-    .navbar .menu-bar {
+    .navbars .menu-bars {
       grid-column: 8 / 10;
       color: #fff;
       font-size: 2em;
       cursor: pointer;
       z-index: 1;
-    }  
-    .hero .info-content {
+    } 
+    .shops{
+      display: none;
+    }
+    .heros .info-content {
       z-index: 0;
       grid-column: 2 / 9;
       grid-row: 5 / 7;
     }
-    .hero .info-content h1 {
+    .heros .info-content h1 {
       font-size: 3.5em;
     }
-    .hero .info-content h3 {
+    .heros .info-content h3 {
       font-size: 1em;
     }
-    .radio-section {
+    .radio-sections {
       grid-template-areas:
       "play-online social-network"
     }
-    .radio-section h2 {
+    .radio-sections h2 {
       display: none;
     }
-    .radio-section .social-network {
+    .radio-sections .social-networks {
       margin: 0 auto;
     }
-    .radio-section .social-network .fab {
+    .radio-sections .social-networks .fab {
       color: #fff;
     }
 
