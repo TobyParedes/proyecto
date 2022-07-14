@@ -285,42 +285,7 @@ body{
 
 
 /* contact */
-  .fondocontact{
-    background-image: url(../images/fondodecontact.png);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    margin: 0;
-    font-family: monospace;
-  }
   
-  .fondocontact1{
-    width: 450px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 258px 20px;
-    box-sizing: border-box;
-    border-radius: 7px;
-  }
-  .textcontact{
-    color: #fff;
-    text-align: center;
-    margin: 0%;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  input, textarea{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-  }
-  textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-  }
 
 
 @media screen and (max-width: 1500px){
@@ -386,13 +351,13 @@ body{
       margin-top: 38em;
       z-index: 1;
     } 
-    .navbar .menu-toggles {
+    .navbars .menu-toggles {
       transform: translateX(0%);
     }  
-     .navbar .shops {
+     .navbars .shops {
        display: none;
      }
-    .navbar .menu-bars {
+    .navbars .menu-bars {
       display: block;
     }
     .navbars .menu-bars .fas {
