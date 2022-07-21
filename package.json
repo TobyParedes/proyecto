@@ -4,7 +4,9 @@
   "description": "Proyecto para Coder",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --include-path sass ./sass/index.scss ./css/styley.css -w"
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w",
+    "watch_css": "nodemon-e scss -x \"npm run build-css\""
+    
   },
   "repository": {
     "type": "git",
