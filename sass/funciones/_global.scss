@@ -162,3 +162,39 @@
     margin-right: 15px;
     justify-content: flex-end;
 }
+.fondocontact{
+    background-image: url(../images/fondodecontact.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+
+    .fondocontact1{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 258px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    }
+    .textcontact{
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    }
+    input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    }
+    textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    }
+}
