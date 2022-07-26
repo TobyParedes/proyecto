@@ -8,6 +8,25 @@
     align-items: $aling;
 }
 
+// maps
+$headings: (
+    h1:3em
+    h2:2em
+    h3:1em
+);
+
+$h1 : map-get($headings, h1);
+
+
+$colores: (
+    primario: #000
+    secundarios: #fff
+);
+
+@function color($color){
+    @return map-get($colores, $color);
+}
+
 // extends
 .cards{
     margin-left: 10px;

@@ -8,7 +8,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+// maps
+$headings: (
+    h1:3em
+    h2:2em
+    h3:1em
+);
 
+$h1 : map-get($headings, h1);
+
+
+$colores: (
+    primario: #000
+    secundarios: #fff
+);
+
+@function color($color){
+    @return map-get($colores, $color);
+}
+// 
+
+
+h1{
+    color: color(primario);
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -124,3 +147,4 @@ body{
     justify-content: center;
     }
 }
+
